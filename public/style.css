@@ -1,0 +1,14 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin-top: 50px;
+  padding: 0px;
+}
+#map-canvas {
+  height: 100%;
+  width: auto;
+  margin: 0px;
+}
+.navbar {
+  background: #000 !important;
+}
