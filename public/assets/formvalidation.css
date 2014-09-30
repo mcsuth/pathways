@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+form label.error {
+	background: #FFF8AF none repeat scroll 0 0;
+}
+
+form label.error {
+	width: auto;
+	display: block;
+	float: left;
+	padding: 3px 4px 3px 3px;
+	margin:0 0 5px 0;
+	font: normal 12px 'Droid Sans', Tahoma, arial, sans-serif;
+	color: #990000;
+	background: #FFF8AF none repeat scroll 0 0;
+	text-align: left;
+	 border-radius: 0.32em 0.32em 0.32em 0.32em;
+	 border:solid 1px #BFBA91;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+form label.error span em.excl {
+	-moz-border-radius-bottomleft: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+	background: #EA5200 none repeat scroll 0 0;
+	color: #FFFFFF;
+	font-weight: bold;
+	margin: 0 5px;
+	padding: 0 4px 0 5px;
+	width: 190px;
+	font-style: normal;
+}
+
+

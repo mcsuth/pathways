@@ -1,0 +1,600 @@
+/* Plan selection */
+.tool-bar {display: inline-block !important;}
+#benefits .border-right {border-right: 0px solid #DCDCDC !important;}
+#rightpanel #plansbar.stuck {padding-top: 0 !important; top: 57px !important; padding-top:10px !important;}
+#rightpanel #planbar {padding: 10px 0 !important;}
+#rightpanel .plans-header.stuck{top: 150px !important;}
+#rightpanel .plans-container {border-right: 0 !important;}
+#rightpanel #planSelect .view-plans .plans-container .plans-header .scroll-left-arrow-wrapper {left: 173px !important;}
+#rightpanel #planSelect .view-plans .plans-section.plans-header.row-fluid.stuck .scroll-left-arrow-wrapper {left: 130px !important;}
+#rightpanel #planSelect .view-plans .plans-container .plans-header .scroll-right-arrow-wrapper {right: 41px !important;}
+#rightpanel #planSelect .view-plans .plans-container .stuck .scroll-right-arrow-wrapper {right: 17px !important;}
+#rightpanel #planSelect .view-plans .plans-container .plans-header {height: 276px;}
+#Nplans .pagination {margin: 0px !important;}
+#rightpanel #plansbar {padding:10px !important}
+#rightpanel .pagination {margin: 10px 0 !important; font-size: 12px; }
+#rightpanel .plans-section-content .plan:nth-child(3n) {border-right: 1px solid #ededed;}
+#rightpanel .plans-section-content .plan {border-left: 1px solid #ededed; border-top: 1px solid #ededed; width: 164px;}
+#rightpanel .plan .premium { font-weight: bold; font-size: 15px; color: #5586A4; }
+#rightpanel .plans-section-content .plan:nth-child(3n) {border-right: 1px solid #ededed;}
+.relative {position: relative}
+#rightpanel h4.green {background: #fff;}
+td.planNameWrap {height: 47px}
+
+#rightpanel .plans-header-content-wrapper .plan {height:246px;}
+#rightpanel #planSelect .view-plans .plans-container .plans-header .plans-header-content-wrapper {height: 276px;}
+#rightpanel .plan p {margin-bottom: 5px; padding: 0 10px}
+#rightpanel #planSelect .view-plans .plans-container {width: 658px}
+#rightpanel .plans-header.stuck {width: 658px;}
+
+#benefits table td {padding: 8px 10px;}
+#benefits table td.plan-details {border-left: 1px solid #ededed; vertical-align: middle;}
+#benefits table td.plan-details p {margin: 0}
+#benefits table th {vertical-align: middle;}
+#planSelect #titlebar {border-radius: 0; margin-top:0;}
+
+#plansbar .nav {margin-bottom: 13px;}
+#plansbar.stuck ul.nav.inline {margin-bottom: 2px;}
+#planSelect .view-plans {margin: 0px;}
+.plans-section-content .table {border-top: 0px;}
+
+#rightpanel #benefits h5 a {font-weight: bold;}
+
+#rightpanel .pagination { margin: 10px 0 !important; font-size: 12px;}
+.pagination ul > li.active a{font-weight: bold;}/*HIX-20476*/
+.idhide {display:none!important;}
+
+/*pop modal for incorrect address field in add employee*/
+.popup-address {
+    left: 53%;
+    margin-top: 10%;
+    width: 25%;
+} 
+
+.tbl-97{
+   width:97%; 
+}
+
+.row-fluid form .controls strong, .span12 .table td{word-break: break-all;} 
+
+#rightpanel h4.graydrkbg {
+  background-color: transparent;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  background-image: none;
+  filter:none;
+
+}
+
+div#alert1 .modal-comment{
+  position:absolute;
+  top:22%;
+}
+
+input.span10.adj-width.error {
+    width: inherit;
+}
+
+/*hix - 18705 */
+form#frmterminatecoverage div.controls label#comp_name,
+form#frmterminatecoverage div.controls label#representative,
+form#frmterminatecoverage div.controls label#todaysDate {
+  margin-top: 5px;
+}
+/*hix - 18705 ends*/
+
+/*Fix for HIX-18244*/
+#frmaddemployee .control-label {
+    width: 175px;
+  font-size:13px
+}
+
+.btn.disabled, .btn[disabled]{
+  background-color: #F4F4F4;
+    border: 1px solid #AEB3B6 !important;
+    color: #6D6D6D;
+}
+
+.auto-height-header{
+  height:auto !important;
+  margin:0;
+}
+
+.justified-text{
+  text-align:justify;
+}
+
+.center-text{
+  text-align:center;
+}
+
+
+.modal-txt-center{
+	text-align:center;
+	margin-top:-15px;
+}
+
+/*HIX-18896*/
+#inbox .read .icon-attachment {
+    color: #2977A7;
+}
+
+.profilephoto{
+	width:100px !important;
+	height:100px !important; 
+}
+
+.tierName{
+	height:40px;
+}
+
+#summary .alignCenter{margin:0 auto;}
+
+.width128{width:128px !important;}
+
+a{cursor: pointer;}
+
+.autoWidthDetails table th label{
+	width:auto !important;
+}
+
+.adjWidthEmail{
+	width:auto !important;
+	max-width:400px;	
+}
+	
+#userlistTbl th{
+	height:26px !important;
+}
+
+.pie-Descrip h4 {
+    color: #E97B00;
+}
+
+/* HIX-21648 */
+iframe#search.searchModal-body body#body-employee #navtopview {
+	top: 10px;
+}
+/* HIX-21648 ends */
+
+/* HIX-21748 */
+#portal .well-step {
+	margin: 0 0px 20px 0;
+}
+.well-step h4 {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+/* HIX-21748 ends */
+
+.esign-tip{
+	font-size:11px;
+	width:102px;
+	float:right;
+}
+
+.headingterminateEmpCov{
+	font-weight:bold;
+	font-size:14px;
+}
+
+/* .frmremittancewidth{
+	width:934px;
+} */
+.frmremittancewidth .width48{
+	width:48px;	
+}
+
+ol.steps li{list-style: decimal;}
+
+.table924{
+	width:924px;
+}
+
+.disableLink{
+	pointer-events:none;
+	cursor:no-drop;	
+}
+
+.noWhiteSpace{
+	white-space: pre-line !important;
+	text-overflow: none !important;
+}
+
+#footer #build{
+	visibility:hidden !important;
+	opacity:0;
+}	
+.requesterLoader{
+	width:20px;
+	display:none;
+	float:left;
+	padding-left:10px;
+}
+
+
+.hide-for-nm{
+	display:none;
+}
+
+td .dropdown .dropdown-toggle {
+    display: block;
+    width: 33px;
+}
+
+.btn-danger {
+    background-color: #DA4F49;
+    background-image: linear-gradient(to bottom, #EE5F5B, #BD362F);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.companyLoader{
+	width:20px;
+	display:none;
+	float:left;
+	padding-left:10px;
+}
+
+
+/* HIX-28823 - temp fix */
+#menu a[title=Account] {
+	padding-right: 30px;
+}
+#menu a[title=Account] i {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+/* HIX-28823 ENDS */
+
+
+/* HIX-26784 - to move to less*/
+div.uploadText {
+	width: 90%;
+	margin-left: 5%;
+}
+div.uploadText h4{
+	font-family: "Montserrat", serif;
+	font-weight: normal;
+	margin-bottom: 25px;
+}
+div.uploadText p {
+	font-family: "Montserrat", Arial, sans-serif;
+}
+div.uploadText a {
+	margin:  0 0 10px;
+	display: inline-block;
+}
+div.uploadText .btn-primary {
+	margin-left: 10px;
+}
+/* HIX-26784 ends*/
+
+
+
+
+
+
+
+/* HIX-33937 move to less!!!!!!! */ 
+.topnav {background: #D6E4EB;} 
+.topnav ul {
+	width: 100%;
+	display: table;
+}
+.topnav ul li {
+	padding: 10px; 
+	position: relative; 
+	width: 20%; 
+	text-align: center;
+	display: table-cell; 
+}
+
+.topnav li.active {background: #A2C2CE;} 
+.topnav li.active a:after {border-left: 22px solid #A2C2CE;} 
+.topnav li:hover {color: #4897A9;} 
+.topnav li.active a {color: #fff;} 
+
+.topnav li a:before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0; 
+  border-top: 30px solid rgba(0, 0, 0, 0); 
+  border-bottom: 30px solid rgba(0, 0, 0, 0); 
+  border-left: 33px solid #FFF; 
+  position: absolute; 
+  top: 50%; 
+  margin-top: -30px; 
+  margin-left: 0px; 
+  left: 100%; 
+  z-index: 1; 
+} 
+
+.topnav li a:after{ 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid rgba(0, 0, 0, 0); 
+  border-bottom: 20px solid rgba(0, 0, 0, 0); 
+  border-left: 22px solid #D6E4EB; 
+  position: absolute; 
+  top: 50%; 
+  margin-top: -20px; 
+  left: 100%; 
+  z-index: 2; 
+  overflow: hidden; 
+} 
+
+.topnav li a {padding: 0 20%; font-size: 14px;} 
+.topnav li a.last:before, 
+.topnav li a.last:after {border:0 !important;}
+/* HIX-33937 ends */
+
+
+/* HIX-38046, HIX-42363 to move to less once there will be less branches to committ to. */
+.info-message,
+.info-message-tribe {
+	position: relative;
+}
+.info-message.checked:before {
+	content: "The event will only enable you to remove your dependents from your insurance coverage.";
+	position: absolute;
+	display: inline-block;
+	width: 230px;
+	font-size: 13px;
+	left: -252px;
+	top: -24px;
+	text-transform: none;
+	text-align: center;
+	padding:8px 6px;
+	border: 1px solid #999;
+	line-height: 18px;
+	border-radius: 3px;
+	background: #fff;
+}
+.info-message-tribe.checked:before {
+	content: "Members of federally recognized tribes can enroll in health plan any time of year. You can change plans as ofter as once a month.";
+	position: absolute;
+	display: inline-block;
+	width: 230px;
+	font-size: 13px;
+	left: -252px;
+	top: -38px;
+	text-transform: none;
+	text-align: center;
+	padding:8px 6px;
+	border: 1px solid #999;
+	line-height: 18px;
+	border-radius: 3px;
+	background: #fff;
+}
+.info-message.checked:after,
+.info-message-tribe.checked:after {
+	content: "\f0da";
+	font-family: "FontAwesome";
+	position: absolute;
+	top: 3px;
+	left: -9px;
+	color: #999;
+}
+/* HIX-38046, HIX-42363 ends */
+   
+/* HIX-30598 Start */
+.loss-mec-radio.checked{
+	position:relative;
+}
+.loss-mec-radio.checked:before{
+	content: attr(title);
+	display: inline-block;
+	width: 230px;
+	font-size: 13px;
+	left: -253px;
+	top: -230px;
+	text-transform: none;
+	text-align: center;
+	padding:8px 6px;
+	border: 1px solid #999;
+	line-height: 18px;
+	border-radius: 3px;
+	background: #fff;position:absolute;
+}
+.loss-mec-radio.checked:after {
+	content: "\f0da";
+	font-family: "FontAwesome";
+	position: absolute;
+	top: 3px;
+	left: -9px;
+	color: #999;
+}
+/* HIX-30598 End */
+
+#rightpanel h4 {border:0 !important;}
+
+
+
+.preferecesPage .view-broker {
+	top: 8px!important;
+	z-index: 10;
+}
+.preferecesPage.topnav {
+ 	top: -30px!important;
+	width: 940px!important;
+}
+/* .preferecesPage	h1 {
+	text-align: center;
+} */
+.preferecesPage #rightpanel .alert {
+	padding: 30px 20px;
+}
+.preferecesPage #rightpanel .alert h4 {
+	background: transparent;
+	color: inherit;
+}
+.preferecesPage #rightpanel ul {
+	margin: 10px 0 10px 10px;
+	list-style-type: none;
+}
+.preferecesPage #rightpanel ul li {
+	margin-bottom: 6px;
+}
+.preferecesPage #rightpanel .alert h4{
+	border-bottom: none;
+}
+.preferecesPage	.zipcode img,
+.preferecesPage	.household img {
+	width: 50px;
+	margin-right: 10px;
+}
+
+
+/* HIX-42558 */
+a.btn-primary [class^="icon-"] {
+	color: #fff;
+}
+table#summary_table td h4 {
+	color: #fff;
+}
+table#summary_table span#totalContribution {
+	color: #666;
+}
+/* HIX-42558 ends */
+/* HIX-37404 Start */
+.table th.sortable a:after {
+    color: #909aa2;
+    content: "\f0dc";
+    font-family: "FontAwesome";
+    font-size: 12px;
+    margin-left: 4px;
+}
+.table th.sortable a {
+    position: relative;
+}
+.table th.sortable img {
+    display: none;
+}
+/* HIX-37404 End */
+.selectPlugin{text-shadow: none;} /*  HIX- 44187 */
+
+
+/* 43189 My Applications */
+  #currentAppStatus {
+    padding: 20px !important;
+    margin: 0 0 -1px 0;
+  }
+  #pastAppStatus {
+    padding: 20px !important;
+  }
+  .currentAppBody {
+    border-radius: 0px !important;
+  }
+  #currentApp {
+    margin-bottom:0px;
+  }
+  .currentPastApps {
+    /* margin: 10px; */
+    /* background: none; 
+    margin-bottom: 0px !important; 
+    margin-top: 0px !important;" */
+  }
+/*   .appsHeaders {
+    background: #ededed; 
+    height:40px
+  } */
+  .applink {
+    border-bottom: 1px dotted #005580 !important; 
+    text-decoration: none !important;
+  }
+  .csractions, .pastApp {
+    color: #333;
+    border: 1px solid #CCC;
+    width: 85%;
+    height: 100%;
+  }
+  .csractions:hover {
+    background: orange;
+  }
+  #enrollButton {
+    position: relative; 
+    top: -19px;
+  }
+  .currentAppLinks, .pastAppsLinks {
+    margin: 0 0 -15px 0;
+  }
+  .currentAppLink:hover {
+	  color: #FFF;
+		text-decoration: none;
+		background: #0092B3;
+		padding: 10px;
+		border-radius: 5px;
+  }
+  #csrButton {
+    margin-top:0px; 
+    border-top: 4px solid orange;
+  }
+  #opencsrMenu {
+    background: #FAA732; 
+    cursor:pointer;
+    padding: 0px 8px 0px 8px !important;
+  }
+  #csrActionButton {
+		color: #FFF;
+		position: relative;
+		top: -2px;
+  }
+  #csrActionGear {
+    color: #FFF; 
+    font-size: 17px; 
+    padding-left: 2px;
+    padding-right: 7px;
+  }
+  #csrMenu {
+    display: block;
+    background: #F6F6F6 !important;
+  }
+  #myAppAccordion {
+    border:0px;
+  }
+  form h5#subtitle {
+    font-weight: bold !important;
+    font-size: 15px;
+  }
+  .toggleChev {
+    position:relative; 
+    top:3px;
+  }
+  .planInfo {
+    margin-bottom: 10px; 
+    padding-top: 90px;
+    padding-left:20px;
+  }
+  .viewBenefitButton {
+    margin-bottom: 20px;
+  }
+  .planBody {
+    background: #ededed;
+  }
+  .planHeader {
+    background: #ddd;
+  }
+  .planTable {
+    margin-bottom: 20px; 
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  .familyCovered {
+    list-style: none;
+    margin-bottom: 20px; 
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+  a.currentAppLink > i {
+		position: relative;
+		top: 1px;
+	}
