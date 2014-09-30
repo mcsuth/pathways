@@ -7,17 +7,13 @@
     <link rel="stylesheet" href="/style.css">
 
     <!-- jQuery -->
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/assets/jquery-1.8.2.min.js"></script>
 
     <!-- Font Awesome -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/assets/bootstrap.min.js">
 
     <!--
     Include the maps javascript with sensor=true because this code is using a
@@ -25,7 +21,7 @@
     See: https://developers.google.com/maps/documentation/javascript/tutorial#Loading_the_Maps_API
     -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
-    
+
     <script>
       // Note: This example requires that you consent to location sharing when
       // prompted by your browser. If you see a blank space instead of the map, this
@@ -86,17 +82,17 @@
   <body>
 
     <!-- NAVBAR START-->
-    <div id="navbar">
+    <div id="menu">
+      <h1>I'm starting @ <input type="text"></h1>
+      <h1>Then, I'm going to<input type="text"></h1>
+    </div>
+    <div id="question">
       <h1>Where are you off too?</h1>
-      <div id="triangle"></div>
     </div>
+    <center>
+      <div id="triangle"></div>
+    </center>
     <!-- NAVBAR END -->
-
-    <!-- SLIDING FORM START-->
-    <div id="slidingform">
-      <div id="triangle"></div>
-    </div>
-    <!-- SLIDING FORM END-->
 
     <!-- GOOGLE MAP START -->
     <div id="map-canvas"></div>
@@ -105,15 +101,8 @@
   </body>
   <script>
     $(document).ready(function(){
-      $("#triangle").click(function(){
-        $("#slidingform").slideToggle();
-        $('#navbar').hide();
-      });
-      $("#slidingform #triangle").click(function(){
-        setTimeout(function() {
-          $('#navbar').show();
-        }, 800);
-        $("#slidingform").slideToggle();
+      $("#question").click(function(){
+        $('#menu').slideToggle();
       });
     });
   </script>
