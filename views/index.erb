@@ -85,9 +85,13 @@
     <div id="menu">
       <h1>I'm starting @ <input type="text"></h1>
       <h1>Then, I'm going to<input type="text"></h1>
+      <h1>Then, I'm going to<input type="text"></h1>
     </div>
     <div id="question">
-      <h1>Where are you off too?</h1>
+      <div id="toggledrawer"> 
+        <h1 id="message1">Where are you off too?</h1>
+        <h1 id="message2" style="display: none;">Find a pathway!</h1>
+      </div>
     </div>
     <center>
       <div id="triangle"></div>
@@ -101,13 +105,14 @@
   </body>
   <script>
     $(document).ready(function(){
-      $("#question").click(function(){
+      $("#toggledrawer").click(function(){
         $('#menu').slideToggle();
+        $('#message1').toggle()
+        $('#message2').toggle()
       });
-      // how do I select multipe elementnodes at a time?
-      $("#triangle").click(function(){
-        $('#menu').slideToggle();
-      });
+      $('#message2').on('click', function(){
+        alert("AJAX request to GET")
+      })
     });
   </script>
 </html>
