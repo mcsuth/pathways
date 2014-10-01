@@ -24,6 +24,8 @@ html, body {
   width: 100%;  
   position: relative;
   z-index: 500;
+  padding-top: 20px;  
+  padding-bottom: 20px;  
 }
 #triangle {
   width: 0;
@@ -48,9 +50,11 @@ h1 {
   color: #BBB !important;
   text-align: center;
   margin: 0px;
-  padding: 20px;
+  /*padding: 20px;*/  
 }
 input[type='text'] {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 !important;
   border: 0px;
   background-color: rgba(0, 0, 0, .01);
   margin: 19px;
