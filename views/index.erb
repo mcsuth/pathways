@@ -8,6 +8,8 @@
 
     <!-- jQuery -->
     <script src="/assets/jquery-1.8.2.min.js"></script>
+    <script src="googlemaps.js"></script>
+    <script src="script.js"></script>
 
     <!-- Font Awesome -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -24,70 +26,19 @@
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     
-    <script>
-      // Note: This example requires that you consent to location sharing when
-      // prompted by your browser. If you see a blank space instead of the map, this
-      // is probably because you have denied permission for location sharing.
 
-      var map;
-
-      function initialize() {
-        var mapOptions = {
-          zoom: 15
-        };
-        map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
-
-        // Try HTML5 geolocation
-        if(navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = new google.maps.LatLng(position.coords.latitude,
-                                             position.coords.longitude);
-
-            var infowindow = new google.maps.InfoWindow({
-              map: map,
-              position: pos,
-              content: 'You Are Here.'
-            });
-
-            map.setCenter(pos);
-          }, function() {
-            handleNoGeolocation(true);
-          });
-        } else {
-          // Browser doesn't support Geolocation
-          handleNoGeolocation(false);
-        }
-      }
-
-      function handleNoGeolocation(errorFlag) {
-        if (errorFlag) {
-          var content = 'Error: The Geolocation service failed.';
-        } else {
-          var content = 'Error: Your browser doesn\'t support geolocation.';
-        }
-
-        var options = {
-          map: map,
-          position: new google.maps.LatLng(60, 105),
-          content: content
-        };
-
-        var infowindow = new google.maps.InfoWindow(options);
-        map.setCenter(options.position);
-      }
-
-      google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
   </head>
   <body>
 
     <!-- NAVBAR START-->
     <div id="menu">
-      <h1>I'm starting @ <input type="text" value="264 Polk Street, San Francisco, CA 94109"></h1>
-      <h1>Then, I'm going to<input type="text" value="Golden Gate Bridge"></h1>
-      <h1>Then, I'm going to<input type="text" value="Chez Maman Restaurant"></h1>
+      <form class="startingpoint">
+        <h1>I'm starting @ <input type="text" value="264 Polk Street, San Francisco, CA 94109"></h1>
+      </form>
+      <form class="destination0">
+        <h1>Then, I'm going to<input type="text" value="Golden Gate Bridge"><small><a class="more btn btn-primary">more</a></small></h1>
+      </form>
+      <!--<h1>Then, I'm going to<input type="text" value="Chez Maman Restaurant"></h1> -->
     </div>
     <div id="question">
       <div id="toggledrawer"> 
@@ -105,16 +56,4 @@
     <!-- GOOGLE MAP END -->
 
   </body>
-  <script>
-    $(document).ready(function(){
-      $("#toggledrawer").click(function(){
-        $('#menu').slideToggle();
-        $('#message1').toggle()
-        $('#message2').toggle()
-      });
-      $('#message2').on('click', function(){
-        alert("AJAX request to GET")
-      })
-    });
-  </script>
 </html>
