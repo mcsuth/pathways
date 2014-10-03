@@ -32,7 +32,9 @@ $(document).ready(function(){
   $('.destinations').on('click', '.add', function() {
     // $(this).closest('div').find('.remove').show()
     // $(this).closest('div').find('.add').hide()
-    log( this );
+    var divactions = this.parentElement;
+    log( divactions );
+    debugger
     $('.destination0').clone().attr('class', 'destination'+counter++).appendTo('form.destinations');
   })
   $('.destinations').on('click', '.remove', function() {

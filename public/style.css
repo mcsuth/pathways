@@ -66,6 +66,6 @@ input[type='text'] {
 .remove {
   /*display: none;*/
 }
-#question, #triangle {
+#question, #triangle, .add, .remove {
   cursor: pointer;
 }
