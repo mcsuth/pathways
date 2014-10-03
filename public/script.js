@@ -23,6 +23,5 @@ $(document).ready(function(){
   var cloned;
   $('.more').on('click', function() {
     $('.destination0').clone().attr('class', 'destination'+counter++).appendTo('#menu');
-    debugger
   })
 });
