@@ -14,6 +14,11 @@ $(document).ready(function(){
     $('#message1').toggle()
     $('#message2').toggle()
   });
+  $("#triangle").click(function(){
+    $('#menu').slideToggle();
+    $('#message1').toggle()
+    $('#message2').toggle()
+  });
 
   // ******************* TOGGLE jQUERY ******************* //
   // ***************************************************** //
@@ -25,6 +30,9 @@ $(document).ready(function(){
   var counter = 1;
   var cloned;
   $('.destinations').on('click', '.add', function() {
+    // $(this).closest('div').find('.remove').show()
+    // $(this).closest('div').find('.add').hide()
+    log( this );
     $('.destination0').clone().attr('class', 'destination'+counter++).appendTo('form.destinations');
   })
   $('.destinations').on('click', '.remove', function() {

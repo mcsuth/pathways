@@ -11,7 +11,7 @@ html, body {
   margin: 0px;
 }
 #menu {
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, .1);
   height: 60%;
   width: 100%;
   display: none;  
@@ -20,7 +20,7 @@ html, body {
   z-index: 500;
 }
 #question {
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, .1);
   width: 100%;  
   position: relative;
   z-index: 500;
@@ -32,7 +32,7 @@ html, body {
   height: 0;
   border-right: 110px solid transparent;
   border-left: 110px solid transparent;
-  border-top: 50px solid rgba(0, 0, 0, .8); 
+  border-top: 50px solid rgba(0, 0, 0, .1); 
   position: relative;
   z-index: 500;
 }
@@ -56,13 +56,16 @@ input[type='text'] {
   font-family: 'Lato', sans-serif !important;
   font-weight: 300 !important;
   border: 0px;
-  background-color: rgba(0, 0, 0, .01);
+  background-color: rgba(0, 0, 0, .001);
   margin: 19px;
-  color: #FFF;
-  border-bottom: 1px dashed #FFF;
+  color: #AAA;
+  border-bottom: 1px dashed #AAA;
   padding: 7px;
   font-size: 25px;
 }
-/*.remove {
-  display: none;
-}*/
+.remove {
+  /*display: none;*/
+}
+#question, #triangle {
+  cursor: pointer;
+}
