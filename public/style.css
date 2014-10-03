@@ -11,7 +11,7 @@ html, body {
   margin: 0px;
 }
 #menu {
-  background: rgba(0, 0, 0, .1);
+  background: rgba(0, 0, 0, .5);
   height: 60%;
   width: 100%;
   display: none;  
@@ -20,7 +20,7 @@ html, body {
   z-index: 500;
 }
 #question {
-  background: rgba(0, 0, 0, .1);
+  background: rgba(0, 0, 0, .5);
   width: 100%;  
   position: relative;
   z-index: 500;
@@ -32,7 +32,7 @@ html, body {
   height: 0;
   border-right: 110px solid transparent;
   border-left: 110px solid transparent;
-  border-top: 50px solid rgba(0, 0, 0, .1); 
+  border-top: 50px solid rgba(0, 0, 0, .5); 
   position: relative;
   z-index: 500;
 }
