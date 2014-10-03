@@ -14,14 +14,20 @@ $(document).ready(function(){
     $('#message1').toggle()
     $('#message2').toggle()
   });
+
+  // ******************* TOGGLE jQUERY ******************* //
+  // ***************************************************** //
   $('#message2').on('click', function(){
     log("AJAX request to GET")
   })
-  // ******************* ADD MORE FIELDS ***************** //
+  // ******************* ADD/REMOVE BUTTONS ************** //
   // ***************************************************** //
   var counter = 1;
   var cloned;
-  $('.more').on('click', function() {
-    $('.destination0').clone().attr('class', 'destination'+counter++).appendTo('#menu');
+  $('.destinations').on('click', '.add', function() {
+    $('.destination0').clone().attr('class', 'destination'+counter++).appendTo('form.destinations');
+  })
+  $('.destinations').on('click', '.remove', function() {
+    $(this).parent().parent().closest('div').remove();
   })
 });
