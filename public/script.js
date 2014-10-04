@@ -49,5 +49,8 @@ $(document).ready(function(){
   })
   $('.destinations').on('click', '.remove', function() {
     $(this).parent().parent().closest('div').remove();
+    if ( $('form.destinations >').length === 1) {
+      $('.add').show()
+    }
   })
 });
