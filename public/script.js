@@ -29,13 +29,19 @@ $(document).ready(function(){
   // ***************************************************** //
   var counter = 1;
   var cloned;
+  var templateDestination = '<div class="destination1">'
+          + '<h1>'
+          + 'Then, I\'m going to'
+          + '<input type="text" value="Golden Gate Bridge">'
+          + '<div class="actions" style="display: inline">'
+          + '<a class="add btn btn-primary">[ + ]</a>'
+          + '<a class="remove btn btn-primary">[ - ]</a>'
+          + '</div>'
+          + '</h1>'
+          + '</div>'
   $('.destinations').on('click', '.add', function() {
-    // $(this).closest('div').find('.remove').show()
-    // $(this).closest('div').find('.add').hide()
-    var divactions = this.parentElement;
-    log( divactions );
+    $(templateDestination).appendTo('form.destinations')
     debugger
-    $('.destination0').clone().attr('class', 'destination'+counter++).appendTo('form.destinations');
   })
   $('.destinations').on('click', '.remove', function() {
     $(this).parent().parent().closest('div').remove();
