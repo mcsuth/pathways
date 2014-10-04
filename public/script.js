@@ -52,5 +52,6 @@ $(document).ready(function(){
     if ( $('form.destinations >').length === 1) {
       $('.add').show()
     }
+    $('form.destinations >').last().find('.add').show()
   })
 });
