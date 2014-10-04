@@ -38,13 +38,14 @@ $(document).ready(function(){
     + 'Then, I\'m going to'
     + '<input type="text" value="Golden Gate Bridge">'
     + '<div class="actions" style="display: inline">'
-    + '<a class="add btn btn-primary">[ + ]</a>'
+    + '<a class="add btn btn-primary"> [ + ]</a> '
     + '<a class="remove btn btn-primary">[ - ]</a>'
     + '</div>'
     + '</h1>'
     + '</div>'
     $(templateDestination).appendTo('form.destinations')
-    debugger
+    $(this).closest('div').find('.add').hide()
+    // debugger
   })
   $('.destinations').on('click', '.remove', function() {
     $(this).parent().parent().closest('div').remove();
