@@ -7,7 +7,7 @@ $(document).ready(function(){
     } catch(e) {}
   }
 
-  // ******************* TOGGLE jQUERY ******************* //
+  // ******************* TOGGLE DOWN jQUERY ************** //
   // ***************************************************** //
   $("#toggledrawer").click(function(){
     $('#menu').slideToggle();
@@ -20,26 +20,29 @@ $(document).ready(function(){
     $('#message2').toggle()
   });
 
-  // ******************* TOGGLE jQUERY ******************* //
+  // ******************* TOGGLE UP jQUERY **************** //
   // ***************************************************** //
   $('#message2').on('click', function(){
     log("AJAX request to GET")
   })
-  // ******************* ADD/REMOVE BUTTONS ************** //
+
+  // ******************* ADD BUTTON ********************** //
   // ***************************************************** //
-  var counter = 1;
+  var counter = 0;
   var cloned;
-  var templateDestination = '<div class="destination1">'
-          + '<h1>'
-          + 'Then, I\'m going to'
-          + '<input type="text" value="Golden Gate Bridge">'
-          + '<div class="actions" style="display: inline">'
-          + '<a class="add btn btn-primary">[ + ]</a>'
-          + '<a class="remove btn btn-primary">[ - ]</a>'
-          + '</div>'
-          + '</h1>'
-          + '</div>'
+
   $('.destinations').on('click', '.add', function() {
+    counter++;
+    var templateDestination = '<div class="destination'+counter+'">'
+    + '<h1>'
+    + 'Then, I\'m going to'
+    + '<input type="text" value="Golden Gate Bridge">'
+    + '<div class="actions" style="display: inline">'
+    + '<a class="add btn btn-primary">[ + ]</a>'
+    + '<a class="remove btn btn-primary">[ - ]</a>'
+    + '</div>'
+    + '</h1>'
+    + '</div>'
     $(templateDestination).appendTo('form.destinations')
     debugger
   })
