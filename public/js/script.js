@@ -26,6 +26,7 @@ $(document).ready(function(){
   // This section will trigger the AJAX (1) request.       //
   // ***************************************************** //
   $('#message2').on('click', function(){
+    debugger
     log("AJAX request to GET")
   })
 
