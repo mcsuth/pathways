@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pathways</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/assets/jquery-1.8.2.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <script src="googlemaps.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="/assets/bootstrap.min.js">
+
+    <!--
+    Include the maps javascript with sensor=true because this code is using a
+    sensor (a GPS locator) to determine the user's location.
+    See: https://developers.google.com/maps/documentation/javascript/tutorial#Loading_the_Maps_API
+    -->
+    
+
+  </head>
+  <body>
+
+    <!-- NAVBAR START-->
+    <div id="menu">
+      <form class="startingpoint">
+        <h1>I'm starting @ <input type="text" value="264 Polk Street, San Francisco, CA 94109"></h1>
+      </form>
+      <form class="destinations">
+        <div class="destination0">
+          <h1>
+            Then, I'm going to
+            <input type="text" value="Golden Gate Bridge">
+            <div class="actions" style="display: inline">
+              <a class="add btn btn-primary">[ + ]</a>
+            </div>
+          </h1>
+        </div>
+      </form>
+    </div>
+    <div id="question">
+      <div id="toggledrawer"> 
+        <h1 id="message1">Where are you off too?</h1>
+        <h1 id="message2" style="display: none;">Find a pathway!</h1>
+      </div>
+    </div>
+    <center>
+      <div id="triangle"></div>
+    </center>
+    <!-- NAVBAR END -->
+
+    <!-- GOOGLE MAP START -->
+    <div id="map-canvas"></div>
+    <!-- GOOGLE MAP END -->
+
+  </body>
+</html>

@@ -1,0 +1,39 @@
+/*For indportal/myApplications  */
+
+.fadeFont {
+	color: #DCDCDC;
+}
+
+.oRReason {
+	font-size: 16px;
+	color: #33CCFF;
+}
+
+.overrideText {
+	border: 1px solid #d37100;
+	background: #E8E8E8;
+	height: 100px;
+	width: 98%; 
+}
+
+.textChCount{
+	float: right;
+	color: #d37100®
+} 
+
+.termDate{
+	vertical-align: baseline;
+	font-size: 16px;
+}
+
+.well-step.nomargin {
+	margin: 0 0 0 0;
+}
+
+input.dateinput {
+	vertical-align: -webkit-baseline-middle;
+}
+
+.commentdetail{
+	color:#A0A0A0;
+}
