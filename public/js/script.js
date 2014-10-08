@@ -26,8 +26,12 @@ $(document).ready(function(){
   // This section will trigger the AJAX (1) request.       //
   // ***************************************************** //
   $('#message2').on('click', function(){
-    debugger
-    log("AJAX request to GET")
+    var startingPointLocation = $('.destinations').find('.startingPoint').find('input').val()
+    //debugger
+    log("AJAX request to GET");
+    log("===================");
+    log("Locations that the user inputed:");
+    
   })
 
   // ******************* ADD BUTTON ********************** //
