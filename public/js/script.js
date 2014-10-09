@@ -70,7 +70,6 @@ $(document).ready(function(){
     + '</div>'
     $(templateDestination).appendTo('form.destinations')
     $(this).closest('div').find('.add').hide()
-    log( Math.floor(Math.random() * 4 + 0) )
   })
   // ******************* ADD BUTTON ********************** //
   // This section contains the function to remove input    //
