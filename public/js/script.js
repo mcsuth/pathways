@@ -28,11 +28,17 @@ $(document).ready(function(){
   $('#message2').on('click', function(){
     var startingPointLocation = $('.destinations').find('.startingPoint').find('input').val()
     //debugger
-    log("AJAX request to GET");
-    log("===================");
-    log("Locations that the user inputed:");
-    
-  })
+    var inputs = $('body').find('input');
+    var destinationObjs = [];
+    inputs.each(function() {
+      var eachvalue = {
+        'location': this.value,
+        'lat': 'latitude',
+        'long': 'longitude',
+        'geolocation': 'geolocation'
+      };
+    });
+  });
 
   // ******************* ADD BUTTON ********************** //
   // This section contains a randomizer to generate        //
