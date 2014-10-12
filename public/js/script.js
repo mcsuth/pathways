@@ -62,8 +62,8 @@ $(document).ready(function(){
       + funphrases[randomfunphrase]
       + '<input type="text" value="Golden Gate Bridge">'
       + '<div class="actions" style="display: inline">'
-      + '<a class="add btn btn-primary"> [ + ]</a> '
-      + '<a class="remove btn btn-primary">[ - ]</a>'
+      + '<a class="add btn btn-primary"> <i class="fa fa-plus-circle"></i></a> '
+      + '<a class="remove btn btn-primary"><i class="fa fa-minus-circle"></i></a>'
       + '</div>'
       + '</h1>'
       + '</div>'
