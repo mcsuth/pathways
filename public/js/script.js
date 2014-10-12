@@ -27,7 +27,6 @@ $(document).ready(function(){
   // ***************************************************** //
   $('#message2').on('click', function(){
     var startingPointLocation = $('.destinations').find('.startingPoint').find('input').val()
-    debugger
     var inputs = $('body').find('input');
     var destinationObjs = [];
     inputs.each(function() {
